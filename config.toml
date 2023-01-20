@@ -1,0 +1,37 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "Silent track"
+theme = "paperesque"
+copyright = "© 2023 Peter Bolla"
+
+[markup]
+  # This is the default from Hugo 0.60.0 onwards, but we're setting config
+  # for it below, so make it explicit
+  defaultMarkdownHandler = "goldmark"
+
+# I can't remember if this is required for syntax highlighting or not.
+pygmentsUseClasses = true
+
+# Uncomment these lines for droplist / resource removal support! See the
+# README for more details
+
+# [outputs]
+# page = ["HTML", "droplist"]
+
+[params]
+# Turn this on if you want to disable margin notes everywhere!
+# disableMarginNotes = true
+
+# And your top-right menu links here.
+
+[[params.topmenu]]
+  name = "about"
+  url = "about/"
+
+[[params.topmenu]]
+  name = "tags"
+  url = "tags/"
+
+[[params.topmenu]]
+  name = "rss"
+  url = "posts/index.xml"
